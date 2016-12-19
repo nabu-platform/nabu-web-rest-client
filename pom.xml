@@ -19,5 +19,9 @@
 			<groupId>nabu.protocols.http</groupId>
 			<artifactId>client</artifactId>
 		</dependency>
+		<dependency>
+			<groupId>nabu.web</groupId>
+			<artifactId>application</artifactId>
+		</dependency>
 	</dependencies>
 </project>
