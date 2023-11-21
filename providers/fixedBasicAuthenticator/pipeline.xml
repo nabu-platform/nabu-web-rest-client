@@ -1,0 +1,5 @@
+<structure interface="be.nabu.libs.http.api.HTTPRequestAuthenticator.authenticate" name="pipeline">
+    <structure name="input"/>
+    <structure name="output"/>
+    <field name="base64" type="java.lang.String"/>
+</structure>

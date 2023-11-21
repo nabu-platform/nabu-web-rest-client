@@ -1,0 +1,1 @@
+We assume the context is a "user:password" syntax that we can immediately enter as the basic authentication

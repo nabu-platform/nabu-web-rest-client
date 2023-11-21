@@ -1,0 +1,1 @@
+We assume the context _is_ the bearer token, this is a simplified version that does not require additional credential storage

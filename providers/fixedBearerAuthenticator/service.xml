@@ -1,0 +1,58 @@
+<sequence xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		disabled="false"
+		id="55ebe1cf21414a4e8210e459c4878c82"
+		lineNumber="1">
+	<steps xsi:type="be.nabu.libs.services.vm.step.Map"
+			disabled="false"
+			id="838a87d671e34d158771da1c3ee298ff"
+			lineNumber="2">
+		<steps xsi:type="be.nabu.libs.services.vm.step.Invoke"
+				disabled="false"
+				id="e0726f761f2f4da7a818892bbf4c6782"
+				serviceId="nabu.data.mime.Services.setHeader"
+				resultName="result07f356e709474a5eba8652091bf017a9"
+				temporaryMapping="true"
+				x="415"
+				y="157"
+				invocationOrder="0"
+				asynchronous="false"
+				recache="false">
+			<steps xsi:type="be.nabu.libs.services.vm.step.Link"
+					disabled="false"
+					id="473bcb808e9147d69496143146c2e51d"
+					mask="false"
+					optional="false"
+					fixedValue="false">
+				<from>input/request/content</from>
+				<to>part</to>
+			</steps>
+			<steps xsi:type="be.nabu.libs.services.vm.step.Link"
+					disabled="false"
+					id="acdbfd0e153c40ba8b8c314b5dd4f884"
+					mask="false"
+					optional="false"
+					fixedValue="true">
+				<from>Authorization</from>
+				<to>headers[0]/name</to>
+			</steps>
+			<steps xsi:type="be.nabu.libs.services.vm.step.Link"
+					disabled="false"
+					id="2ed73a4913274644b021edcaa888472d"
+					mask="false"
+					optional="false"
+					fixedValue="true">
+				<from>="Bearer " + input/context</from>
+				<to>headers[0]/value</to>
+			</steps>
+		</steps>
+		<steps xsi:type="be.nabu.libs.services.vm.step.Link"
+				disabled="false"
+				id="774a2eff68944b2cbd190ec88cf18bd0"
+				mask="false"
+				optional="false"
+				fixedValue="true">
+			<from>true</from>
+			<to>output/authenticated</to>
+		</steps>
+	</steps>
+</sequence>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<node artifactManager="be.nabu.eai.module.services.vm.VMServiceManager" created="2023-10-11T09:29:27.373+02:00" lastModified="2023-10-11T09:32:21.061+02:00" leaf="true" version="5">
+    <environmentId>apollo</environmentId>
+    <hidden>false</hidden>
+    <locked>false</locked>
+    <properties>
+        <property key="authenticationType">fixed:basic</property>
+    </properties>
+    <references>nabu.utils.Transcoder.base64Encoder</references>
+    <references>nabu.utils.Transcoder.transcode</references>
+    <references>be.nabu.libs.http.api.HTTPRequestAuthenticator.authenticate</references>
+    <references>be.nabu.libs.http.api.HTTPResponse</references>
+    <references>nabu.data.mime.Services.setHeader</references>
+    <references>be.nabu.libs.http.api.HTTPRequest</references>
+    <references>java.lang.Boolean</references>
+    <references>java.lang.String</references>
+</node>
