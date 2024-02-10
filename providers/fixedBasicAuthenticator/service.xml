@@ -18,6 +18,15 @@
 				invocationOrder="0"
 				asynchronous="false"
 				recache="false">
+			<steps xsi:type="be.nabu.libs.services.vm.step.Link"
+					disabled="false"
+					id="3ad56878f0ac4ca2884508b9c33514e5"
+					mask="false"
+					optional="false"
+					fixedValue="true">
+				<from>0</from>
+				<to>bytesPerLine</to>
+			</steps>
 		</steps>
 		<steps xsi:type="be.nabu.libs.services.vm.step.Invoke"
 				disabled="false"
